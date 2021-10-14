@@ -1,0 +1,72 @@
+<html>
+    <head>
+       
+        <style>
+            @import url(style.css);
+            p.highlight {
+                color: red;
+            }
+            svg {
+                background-color: rgb(41, 41, 36);
+            }
+
+        
+        </style>
+        <script src="./dist/spaceinvaders.js"></script>
+    </head>
+    <body>
+        
+        <h1>Space Invaders</h1>
+        <div style="width: 100%;">
+            <div style="width: 50%; height: 100px; float: left;"> 
+                <svg id="canvas" width="600" height="600"
+                <g id="body" ></g>
+                <text id="theText"> test</text>
+                    <polygon id="ship" points="-15,20 15,20 0,-20" 
+                                style="fill:lightblue" transform="translate(100,550)">
+                    </polygon>
+        
+                  </g>
+            </svg>
+            </div>
+            <div style="font-size: 200%;font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;margin-left: 40%; height:100%;width:50%; background: white;"> 
+                <p style="height:10%;">       
+                </p>
+                <p style="height:1%;">Level: 
+                    <span id="theLevel"></span>
+                </p>
+                <p style="height:1%;">Score:
+                        <span id="theScore"></span>
+                    
+
+                        <p style="height:1%;">Power Up:
+                            <span id="thePowerUp"></span>
+                            
+                        
+                            </p>
+                            <p style="height:1%;">Expires in:
+                                <span id="theExpired"></span>
+                                
+                            
+                                </p>
+                        <p style="height:10%;">Instructions:
+                            <span style="font-size:70%"><br>Press Enter to restart the game.
+                                <br>Spacebar to shoot.
+                                <br>Hover mouse over canvas to move ship.
+                                <br> You are only given 1 power up per level.
+                                <br> Freeze:freezes enemy bullet and themselves
+                                <br> Immortality: you cannot die when bullet touches you
+                                <br>Left click to use Power up when available.
+                                <br>Power ups are active for 5 seconds only when used.
+                                <br> There's a total of 30 levels.
+                                 <br>Each level increases alien bullet fire rate.
+                                 <br> shields decay if shot, you die if get hit by alien or bullets
+                            </span>
+                            
+                            </p>
+            </div>
+            
+        </div>
+
+    </body>
+</html>
